@@ -3,15 +3,16 @@
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   
-  <title>归档: 2019 | AI搬砖工</title>
+  <title>hello world | AI搬砖工</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="AI搬砖工">
-<meta property="og:url" content="https://celia.io/archives/2019/index.html">
+  <meta property="og:type" content="article">
+<meta property="og:title" content="hello world">
+<meta property="og:url" content="https://celia.io/hello-world-1/index.html">
 <meta property="og:site_name" content="AI搬砖工">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-07-20T04:04:13.556Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="AI搬砖工">
+<meta name="twitter:title" content="hello world">
   
     <link rel="alternate" href="/atom.xml" title="AI搬砖工" type="application/atom+xml">
   
@@ -21,7 +22,7 @@
   
     
   
-  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
   
 
 </head>
@@ -46,77 +47,127 @@
       <nav id="main-nav">
         <a id="main-nav-toggle" class="nav-icon"></a>
         
-          <a class="main-nav-link" href="../../index.html">首页</a>
+          <a class="main-nav-link" href="../index.html">首页</a>
         
-          <a class="main-nav-link" href="../../archives">归档</a>
+          <a class="main-nav-link" href="../archives">归档</a>
         
-          <a class="main-nav-link" href="../../about">关于</a>
+          <a class="main-nav-link" href="../about">关于</a>
         
       </nav>
       
     </div>
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="../../index.html" id="logo">AI搬砖工</a>
+        <a href="../index.html" id="logo">AI搬砖工</a>
       </h1>
       
     </div>
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="" class="archive-year">2019</a>
-        </div>
-         <span class="archive-year-post">2 post  this year</span>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="../../hello-world-1/" class="archive-article-date">
-  <time datetime="2019-07-20T04:04:13.000Z" itemprop="datePublished">07-20</time>
+        <section id="main"><article id="post-hello-world-1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="" class="article-date">
+  <time datetime="2019-07-20T04:04:13.000Z" itemprop="datePublished">2019-07-20</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="../../hello-world-1/">hello world</a>
+    <h1 class="article-title" itemprop="name">
+      hello world
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="../../hello-world/" class="archive-article-date">
-  <time datetime="2019-07-20T03:23:29.066Z" itemprop="datePublished">07-20</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="../../hello-world/">Hello World</a>
-    </h1>
-  
-
-    </header>
+        <!-- Table of Contents -->
+        
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://celia.io/hello-world-1/" data-id="cjyf72722000059sk5ufx0p88" class="article-share-link">分享</a>
+      
+      
+      
+    </footer>
   </div>
+  
+    
+ <script src="../jquery/jquery.min.js"></script>
+  <div id="random_posts">
+    <h2>推荐文章</h2>
+    <div class="random_posts_ul">
+      <script>
+          var random_count =4
+          var site = {BASE_URI:'/'};
+          function load_random_posts(obj) {
+              var arr=site.posts;
+              if (!obj) return;
+              // var count = $(obj).attr('data-count') || 6;
+              for (var i, tmp, n = arr.length; n; i = Math.floor(Math.random() * n), tmp = arr[--n], arr[n] = arr[i], arr[i] = tmp);
+              arr = arr.slice(0, random_count);
+              var html = '<ul>';
+            
+              for(var j=0;j<arr.length;j++){
+                var item=arr[j];
+                html += '<li><strong>' + 
+                item.date + ':&nbsp;&nbsp;<a href="' + (site.BASE_URI+item.uri) + '">' + 
+                (item.title || item.uri) + '</a></strong>';
+                if(item.excerpt){
+                  html +='<div class="post-excerpt">'+item.excerpt+'</div>';
+                }
+                html +='</li>';
+                
+              }
+              $(obj).html(html + '</ul>');
+          }
+          $('.random_posts_ul').each(function () {
+              var c = this;
+              if (!site.posts || !site.posts.length){
+                  $.getJSON(site.BASE_URI + 'js/posts.js',function(json){site.posts = json;load_random_posts(c)});
+              } 
+               else{
+                load_random_posts(c);
+              }
+          });
+      </script>
+    </div>
+  </div>
+
+    
+<nav id="article-nav">
+  
+  
+    <a href="../hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
+ 
+     
+  <div class="comments" id="comments">
+    
+     
+       
+      <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+    
+       
+      
+      
+  </div>
+ 
   
 
 </section>
@@ -140,11 +191,11 @@
       <ul>
         
           <li>
-            <a href="../../hello-world-1/">hello world</a>
+            <a href="">hello world</a>
           </li>
         
           <li>
-            <a href="../../hello-world/">Hello World</a>
+            <a href="../hello-world/">Hello World</a>
           </li>
         
       </ul>
@@ -153,13 +204,6 @@
 
   
     
-  <div class="widget-wrap">
-    <h3 class="widget-title archive">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="07/">July 2019</a><span class="archive-list-count">2</span></li></ul>
-    </div>
-  </div>
-
 
   
     
@@ -184,15 +228,15 @@
     </div>
   </div>
 </footer>
- <script src="../../jquery/jquery.min.js"></script>
+ <script src="../jquery/jquery.min.js"></script>
     </div>
     <nav id="mobile-nav">
   
-    <a href="../../index.html" class="mobile-nav-link">首页</a>
+    <a href="../index.html" class="mobile-nav-link">首页</a>
   
-    <a href="../../archives" class="mobile-nav-link">归档</a>
+    <a href="../archives" class="mobile-nav-link">归档</a>
   
-    <a href="../../about" class="mobile-nav-link">关于</a>
+    <a href="../about" class="mobile-nav-link">关于</a>
   
 </nav>
     <img class="back-to-top-btn" src="/images/fly-to-top.png"/>
@@ -259,15 +303,15 @@ window.onload = function() {
   
 
 
- <script src="../../js/is.js"></script>
+ <script src="../js/is.js"></script>
 
 
-  <link rel="stylesheet" href="../../fancybox/jquery.fancybox.css">
-  <script src="../../fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" href="../fancybox/jquery.fancybox.css">
+  <script src="../fancybox/jquery.fancybox.pack.js"></script>
 
 
-<script src="../../js/script.js"></script>
-<script src="../../js/elevator.js"></script>
+<script src="../js/script.js"></script>
+<script src="../js/elevator.js"></script>
   </div>
 </body>
 </html>
