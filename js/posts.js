@@ -1,1 +1,1 @@
-[{"title":"hello world","date":"2019.07.20","uri":"hello-world-1/","excerpt":""},{"title":"Hello World","date":"2019.07.23","uri":"hello-world/","excerpt":""}]
+[{"title":"Azure WebApp Logs自动备份到Azure Storage","date":"2018.10.25","uri":"2018/10/25/20181005 Azure WebApp Logs自动备份到Azure Storage/","excerpt":""},{"title":"ASP.NET Core + IIS 502.5错误码0x8007010b的解决方法","date":"2018.08.25","uri":"2018/08/25/20180825 ASP.NET Core解决IIS部署2008R2失败与反向代理的问题/","excerpt":""}]
